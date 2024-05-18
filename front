@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+    <head>       
         <title>Terrasol Parcelas</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
@@ -21,12 +21,8 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
-        <style>
-            img {
-                height: 600px;
-                width: auto;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="./function.js"></script>
     </head>
 
     <body>
@@ -131,111 +127,9 @@
                               </g>
                             </svg>
                           </label>
-                          <style>
-                            #theme-toggle-button {
-                              font-size: 13px;
-                              position: relative;
-                              display: inline-block;
-                              width: 7em;
-                              cursor: pointer;
-                            }
-                            #toggle {
-                              opacity: 0;
-                              width: 0;
-                              height: 0;
-                            }
-                            #container,
-                            #patches,
-                            #stars,
-                            #button,
-                            #sun,
-                            #moon,
-                            #cloud {
-                              transition-property: all;
-                              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-                              transition-duration: 0.50s;
-                            }
-                            #toggle:checked + svg #container {
-                              fill: #2b4360;
-                            }
-
-                            #toggle:checked + svg #button {
-                              transform: translate(28px, 2.333px);
-                            }
-
-                            #sun {
-                              opacity: 1;
-                            }
+                        <script>
                             
-                            #toggle:checked + svg #sun {
-                              opacity: 0;
-                            }
-                            
-                            #moon {
-                              opacity: 0;
-                            }
-                            #toggle:checked + svg #moon {
-                              opacity: 1;
-                            }
-
-                            #cloud {
-                              opacity: 1;
-                            }                            
-                            #toggle:checked + svg #cloud {
-                              opacity: 0;
-                            }                            
-                            #stars {
-                              opacity: 0;
-                            }                           
-                            #toggle:checked + svg #stars {
-                              opacity: 1;
-                            }
-                            </style>
-                        <style>
-                            .button {
-                                background-color: #3498db;
-                                color: white;
-                                padding: 10px 20px;
-                                border: none;
-                                cursor: pointer;
-                            }
-
-                            .button:active {
-                                background-color: white;
-                                color: #3498db;
-                            }
-
-                            .button.dark-theme {
-                                background-color: black;
-                                color: white;
-                            }
-
-                            .button.dark-theme:active {
-                                background-color: white;
-                                color: rgb(68, 68, 68);}
-                            .light-theme {
-                                background-color: white;
-                                color: rgb(82, 82, 82);
-                            }
-
-                            .dark-theme {
-                                background-color: rgb(32, 32, 32);
-                                color: white;
-                            }
-                        </style>
-                        <script>function toggleTheme() {
-                            var body = document.querySelector('body');
-                            var button = document.querySelector('.button');
-                            
-                            body.classList.toggle('light-theme');
-                            body.classList.toggle('dark-theme');
-                            
-                            if (body.classList.contains('dark-theme')) {
-                                button.classList.add('dark-theme');
-                            } else {
-                                button.classList.remove('dark-theme');
-                            }
-                        }</script>
+                        </script>
                     </div>
                 </div>
             </nav>
@@ -437,22 +331,7 @@
                         <option value="compra">Compra</option>
                         <option value="reclamo">Reclamo</option>
                         <option value="sugerencia">Sugerencia</option>
-                    </select>
-                    <style>
-                        select {
-                            padding: 10px;
-                            font-size: 6px;
-                            width: 50px;
-                            padding: 10px;
-                            font-size: 16px;
-                            width: 120px;
-                        }
-                        option {
-                            text-align: left;
-                            font-weight: bold;
-                            font-size: 15px;
-                        }
-                    </style>                    
+                    </select>                   
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Mensaje</label>
@@ -462,21 +341,7 @@
                     <form id="miFormulario" onsubmit="return validarFormulario()">
                         <input type="checkbox" id="miCheck" name="miCheck"> Acepto los términos y condiciones
                         <button class="miCheck" type="submit">Enviar</button>
-                    </form>
-                    <style>
-                        .miCheck {
-                          float: right;
-                        }
-                      </style>                  
-                    <script>
-                    function validarFormulario() {
-                        if (!document.getElementById("miCheck").checked) {
-                            alert("Por favor, marca la casilla de aceptación de los términos y condiciones.");
-                            return false; 
-                        }
-                        return true; 
-                    }
-                    </script>
+                    </form>                 
                 </div>
                 <div>
                 <dl>
@@ -504,35 +369,7 @@
                             <dd id="answer6" style="display: none">Sí, realizamos envíos a nivel internacional con tarifas de envío variables según el destino.</dd>
                         </div>
                     </div>
-                      <style>.button-style {
-                        background-color: #1d5f8b; 
-                        color: white; 
-                        padding: 10px 20px; 
-                        border: none; 
-                        cursor: pointer; 
-                        border-radius: 5px; 
-                        margin: 5px; 
-                        .column {
-                        flex: 1;
-                        }                   
-                    }
-                    </style>
                   </dl>
-                  <script>
-                    function toggleAnswer(id) {
-                        var answer = document.getElementById(id);
-                        var isAnswerVisible = answer.style.display === 'block';
-                        var allAnswers = document.querySelectorAll('dd');
-                        allAnswers.forEach(function(item) {
-                            item.style.display = 'none';
-                        });
-                        if (!isAnswerVisible) {
-                            answer.style.display = 'block';
-                        } else {
-                            answer.style.display = 'none';
-                        }
-                    }
-                    </script>
                                 <div class="cardlist" id="contacto">
                                     <div class="card"><i class="bi bi-person-workspace"></i>© FrontEnd Team, CIISA, Seccion 71</div>
                                     <div class="card">Dirección: Calle 1 oriente esquina 3 sur n° 809, Talca.</div>
@@ -553,20 +390,6 @@
                                         </li>
                                     </ul></div>
                                 </div>
-                                <style>
-                                .cardlist {
-                                display: grid;
-                                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                                grid-gap: 20px;
-                                }
-                                .card {
-                                background-color: #f1f1f1;
-                                padding: 20px;
-                                text-align: center;
-                                border-radius: 5px;
-                                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                                    }
-                                </style>
                 </div>     
             </div>            
         </main>

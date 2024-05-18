@@ -1,0 +1,144 @@
+ /* boton sol y luna */
+#theme-toggle-button {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  cursor: pointer;
+}
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.50s;
+}
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+#cloud {
+  opacity: 1;
+}                            
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}                            
+#stars {
+  opacity: 0;
+}                           
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+.button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: white;
+    color: #3498db;
+}
+
+.button.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.button.dark-theme:active {
+    background-color: white;
+    color: rgb(68, 68, 68);}
+.light-theme {
+    background-color: white;
+    color: rgb(82, 82, 82);
+}
+
+.dark-theme {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+
+/*lista deplegable*/
+ select {
+    padding: 10px;
+    font-size: 6px;
+    width: 50px;
+    padding: 10px;
+    font-size: 16px;
+    width: 120px;
+}
+option {
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+  /*boton checkeado*/
+.miCheck {
+    float: right;
+  }
+
+/*Estilo de preguntas*/
+  .button-style {
+    background-color: #1d5f8b; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin: 5px; 
+    .column {
+    flex: 1;
+    }                   
+}
+/* Estilo de cartas*/
+.cardlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    }
+    .card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+/* banner */
+img {
+    height: 600px;
+    width: auto;
+}
+
