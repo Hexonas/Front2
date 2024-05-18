@@ -1,74 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Terrasol Parcelas</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        
-
-        <!-- Bootstrap CSS v5.3.2 -->
+        <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
         />
-        <!-- Bootstrap Icons -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        />
-        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="styles.css" />
     </head>
-
     <body>
         <header>
-            <nav
-                class="navbar fixed-top navbar-expand-lg navbar-light bg-light"
-            >
-                <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
                     <a class="navbar-brand" href="#">Terrasol Parcelas</a>
                     <button
-                        class="navbar-toggler d-lg-none"
+                        class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#" aria-current="page"
-                                    >Inicio
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Parcelas
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#nosotros"
-                                    >Nosotros</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#parcelas"
-                                    >Parcelas</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#terrenos"
-                                    >Solo Terreno</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"
-                                    >Casa en Parcelas</a
-                                >
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Solo Terreno</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Casa en Parcela</a
+                                        >
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"
@@ -78,410 +74,378 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contacto</a>
                             </li>
+                            <li class="nav-item">
+                                <!-- Bootstrap 5 switch -->
+                                <div class="form-check form-switch">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="darkModeSwitch"
+                                        checked
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="darkModeSwitch"
+                                        >Dark Mode</label
+                                    >
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="img/illiya-vjestica-W5FdAcHp7l8-unsplash.bak.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="img/jack-b-aLxqnaKgS9A-unsplash.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="img/tomasz-filipek-CUWC-6MRcNg-unsplash.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
         <main>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="First slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="1"
-                        aria-label="Second slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="2"
-                        aria-label="Third slide"
-                    ></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img
-                            src="img/illiya-vjestica-W5FdAcHp7l8-unsplash.bak.jpg"
-                            class="w-100 d-block"
-                            alt="First slide"
-                        />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Parcela 1</h3>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="img/peter-muscutt-pkg77ZtBCmg-unsplash.jpg"
-                            class="w-100 d-block"
-                            alt="Second slide"
-                        />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Parcela 2</h3>
-                            <p>Description</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
+            <section>
+                <div>
+                    <h1>Nosotros</h1>
+                    <h2>Inicios</h2>
+                    <p>
+                        Terrasol Parcelas emerge como un referente en el mercado
+                        inmobiliario de la zona centro sur de Chile, ofreciendo
+                        una oportunidad única para aquellos que buscan invertir
+                        en la naturaleza y la tranquilidad de este idílico
+                        paisaje. Especializados en la venta de parcelas de 5000
+                        metros cuadrados, Terrasol Parcelas facilita el acceso a
+                        la propiedad de tierras con una inversión inicial
+                        accesible, comenzando desde tan solo 1 millón de pesos.
+                    </p>
+                    <h2>Nos diferenciamos</h2>
+                    <p>
+                        Lo que diferencia a Terrasol Parcelas es su enfoque
+                        innovador y centrado en el cliente. Con el objetivo de
+                        brindar una experiencia completa y transparente, la
+                        empresa ofrece un tour virtual de las parcelas,
+                        permitiendo a los clientes explorar y visualizar cada
+                        rincón de sus futuras propiedades desde la comodidad de
+                        sus hogares. Además, para aquellos que buscan una
+                        solución integral, Terrasol Parcelas también ofrece la
+                        opción de adquirir parcelas que incluyen casas,
+                        proporcionando una alternativa llave en mano para
+                        aquellos que desean una vida en armonía con la
+                        naturaleza sin sacrificar comodidades modernas.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h1>Parcelas</h1>
+                    <div class="card" style="width: 18rem">
                         <img
                             src="img/werner-sevenster-JuP0ZG0UNi0-unsplash.jpg"
-                            class="w-100 d-block"
-                            alt="Third slide"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 18rem; height: 300px"
                         />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Parcela 3</h3>
-                            <p>Description</p>
+                        <div class="card-body">
+                            <h5 class="card-title">Solo Terreno</h5>
+                            <p class="card-text">
+                                Especializados en la venta de parcelas de 5000
+                                metros cuadrados.
+                            </p>
                         </div>
                     </div>
-                    x
+                    <div class="card" style="width: 18rem">
+                        <img
+                            src="img/werner-sevenster-JuP0ZG0UNi0-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 18rem; height: 300px"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Casas en Parcelas</h5>
+                            <p class="card-text">
+                                Disponemos de parcelas con la construcción hecha
+                                de la casa soñada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem">
+                        <img
+                            src="img/werner-sevenster-JuP0ZG0UNi0-unsplash.jpg"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 18rem; height: 300px"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Financiamiento</h5>
+                            <p class="card-text">
+                                La empresa ofrece crédito directo sin necesidad
+                                de pasar por bancos, avales o requisitos
+                                complicados.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="prev"
-                >
-                    <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="next"
-                >
-                    <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-            <div class="card text-center">
-                <div class="card-body">
-                    <h4 class="card-title" id="nosotros">Nosotros</h4>
-                    <p class="card-text">
-                        Terrasol Parcelas es un referente destacado en el
-                        mercado inmobiliario de la zona centro sur de Chile,
-                        ofreciendo oportunidades únicas de inversión en un
-                        entorno natural y tranquilo. Especializados en la venta
-                        de parcelas de 5000 metros cuadrados, facilitamos el
-                        acceso a la propiedad de tierras con una inversión
-                        inicial accesible, a partir de 1 millón de pesos.
-                        Nuestro enfoque innovador se centra en brindar una
-                        experiencia completa y transparente a nuestros clientes,
-                        con tours virtuales de las parcelas y opciones llave en
-                        mano que combinan la vida en armonía con la naturaleza y
-                        las comodidades modernas. En Terrasol Parcelas, nos
-                        comprometemos con la accesibilidad financiera al ofrecer
-                        crédito directo sin complicaciones bancarias,
-                        permitiendo que una amplia gama de personas haga
-                        realidad su sueño de adquirir una parcela. Más que
-                        simplemente vender tierras, en Terrasol Parcelas
-                        ofrecemos un estilo de vida, siendo un aliado confiable
-                        para aquellos que buscan invertir en su futuro y calidad
-                        de vida en el encantador entorno del centro sur de Chile
-                    </p>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-body">
-                    <h4 class="card-title" id="parcelas">Parcelas</h4>
-                    <p class="card-text">
-                        Parcelas de 5000 metros cuadrados: Las parcelas
-                        ofrecidas por Terrasol Parcelas son de un tamaño
-                        generoso de 5000 metros cuadrados, lo que brinda a los
-                        compradores un amplio espacio para construir y disfrutar
-                        de la naturaleza. Inversión inicial accesible: Terrasol
-                        Parcelas facilita el acceso a la propiedad de tierras
-                        con una inversión inicial asequible, comenzando desde
-                        tan solo 1 millón de pesos. Esto permite a una amplia
-                        gama de personas realizar su sueño de adquirir una
-                        parcela en un entorno natural y tranquilo. Experiencia
-                        completa y transparente: La empresa se destaca por
-                        ofrecer una experiencia completa y transparente a sus
-                        clientes. Esto incluye tours virtuales de las parcelas,
-                        que permiten a los compradores explorar y visualizar sus
-                        futuras propiedades desde la comodidad de sus hogares.
-                        Opciones llave en mano: Terrasol Parcelas también ofrece
-                        opciones llave en mano que combinan la vida en armonía
-                        con la naturaleza y las comodidades modernas. Esto
-                        brinda a los compradores una solución integral para
-                        adquirir una parcela que incluye casas u otras
-                        instalaciones. Accesibilidad financiera: La empresa se
-                        compromete con la accesibilidad financiera al ofrecer
-                        crédito directo sin complicaciones bancarias. Este
-                        enfoque elimina las barreras típicas asociadas con el
-                        financiamiento tradicional y hace que la adquisición de
-                        una parcela sea una posibilidad realista para más
-                        personas. Estilo de vida y calidad de vida: Terrasol
-                        Parcelas va más allá de vender tierras, ya que ofrece un
-                        estilo de vida en armonía con la naturaleza. Como aliado
-                        confiable, la empresa ayuda a los compradores a invertir
-                        en su futuro y calidad de vida en el encantador entorno
-                        del centro sur de Chile.
-                    </p>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-body">
-                    <h4 class="card-title" id="terrenos">Solo Terreno</h4>
-                    <p class="card-text">
-                        Lorem Ubicación privilegiada: Los terrenos de Terrasol
-                        Parcelas se encuentran en una ubicación privilegiada en
-                        el centro sur de Chile, rodeados de naturaleza y
-                        tranquilidad, ofreciendo un entorno ideal para aquellos
-                        que buscan alejarse del bullicio de la ciudad. Tamaño
-                        ideal: Los terrenos disponibles tienen un tamaño de 5000
-                        metros cuadrados, lo que brinda a los compradores un
-                        amplio espacio para desarrollar proyectos, construir su
-                        hogar o disfrutar de actividades al aire libre. Entorno
-                        natural: Los terrenos de Terrasol Parcelas están
-                        inmersos en un entorno natural excepcional, con paisajes
-                        pintorescos y una atmósfera de serenidad que permite a
-                        los propietarios conectar con la naturaleza y disfrutar
-                        de un estilo de vida más tranquilo. Accesibilidad: La
-                        accesibilidad financiera que ofrece Terrasol Parcelas
-                        permite a una amplia gama de personas adquirir un
-                        terreno en esta zona privilegiada, sin las
-                        complicaciones habituales asociadas con el proceso de
-                        compra de tierras. Opciones de diseño y construcción: Al
-                        adquirir un terreno en Terrasol Parcelas, los
-                        compradores tienen la flexibilidad de diseñar y
-                        construir la propiedad de sus sueños, adaptándola a sus
-                        necesidades y preferencias personales. Posibilidad de
-                        inversión: Además de ser un lugar para construir un
-                        hogar, los terrenos de Terrasol Parcelas representan una
-                        oportunidad de inversión a largo plazo, ya que la
-                        demanda de propiedades en entornos naturales sigue
-                        creciendo. Al resaltar estas características de los
-                        terrenos ofrecidos por Terrasol Parcelas, podrás
-                        transmitir a los interesados las ventajas de adquirir un
-                        terreno en este desarrollo inmobiliario único en el
-                        centro sur de Chile.
-                    </p>
-                </div>
-            </div>
-            <div class="card text-center">
-                <div class="card-body">
-                    <h4 class="card-title" id="casaparcelas">
-                        Casa En Parcelas
-                    </h4>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Nesciunt in quae dignissimos! Nulla, repellendus,
-                        accusamus eum aliquam totam ea dicta placeat accusantium
-                        blanditiis, voluptatum illo nisi ab modi quae quaerat.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Mollitia deleniti ex quas cum consequuntur maxime
-                        dicta tempore dolor libero, distinctio quos tempora
-                        assumenda quis nostrum adipisci reiciendis optio
-                        perspiciatis possimus!
-                    </p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="mb-3">
-                    <label for="" class="form-label">Nombre</label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="Ingrese Nombre"
-                    />
-                </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Apellido</label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="Ingrese Apellido"
-                    />
-                </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Email</label>
-                    <input
-                        type="email"
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="abc@mail.com"
-                    />
-                </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Telefono</label>
-                    <input
-                        type="tel"
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="Ingrese Teléfono"
-                    />
-                </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Asunto</label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        name=""
-                        id=""
-                        placeholder="Ingrese Asunto"
-                    />
-                </div>
-                <div class="mb-3">
-                    <label for="" class="form-label">Mensaje</label>
-                    <textarea
-                        class="form-control"
-                        name=""
-                        id=""
-                        rows="3"
-                    ></textarea>
-                </div>
+            </section>
+            <section>
                 <div>
-                    <form
-                        id="miFormulario"
-                        onsubmit="return validarFormulario()"
-                    >
-                        <input type="checkbox" id="miCheck" name="miCheck" />
-                        Acepto los términos y condiciones
-                        <button class="miCheck" type="submit">Enviar</button>
+                    <h1>Preguntas Frecuentes</h1>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    <strong
+                                        >¿Cómo solicito una cotización?</strong
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Puedes contactarnos por mensaje directo en
+                                    instagram o facebook y nos pides la
+                                    cotización.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    <strong
+                                        >¿Cómo veo una parcela o casa?</strong
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Puedes solicitar visita virtual por mensaje
+                                    directo en instagram o facebook
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    <strong
+                                        >¿Cómo veo los temas de financiamiento
+                                        directo?</strong
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Puedes contactarnos por mensaje directo en
+                                    instagram o facebook y nos indicas que
+                                    buscas financiamientos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h1>Contáctanos</h1>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label"
+                                >First name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom01"
+                                value="Mark"
+                                required
+                            />
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label"
+                                >Last name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom02"
+                                value="Otto"
+                                required
+                            />
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label
+                                for="validationCustomUsername"
+                                class="form-label"
+                                >Username</label
+                            >
+                            <div class="input-group has-validation">
+                                <span
+                                    class="input-group-text"
+                                    id="inputGroupPrepend"
+                                    >@</span
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label"
+                                >City</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom03"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label"
+                                >State</label
+                            >
+                            <select
+                                class="form-select"
+                                id="validationCustom04"
+                                required
+                            >
+                                <option selected disabled value="">
+                                    Choose...
+                                </option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label"
+                                >Zip</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom05"
+                                required
+                            />
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="invalidCheck"
+                                    required
+                                />
+                                <label
+                                    class="form-check-label"
+                                    for="invalidCheck"
+                                >
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">
+                                Submit form
+                            </button>
+                        </div>
                     </form>
-                    <style>
-                        .miCheck {
-                            float: right;
-                        }
-                    </style>
-                    <script>
-                        function validarFormulario() {
-                            if (!document.getElementById("miCheck").checked) {
-                                alert(
-                                    "Por favor, marca la casilla de aceptación de los términos y condiciones."
-                                );
-                                return false; // Evita que el formulario se envíe
-                            }
-                            return true; // Envía el formulario si el botón check está marcado
-                        }
-                    </script>
                 </div>
-                <div>
-                    <dl>
-                        <br />
-                        <dt
-                            class="button-style"
-                            onclick="toggleAnswer('answer1')"
-                        >
-                            ¿Cómo puedo registrarme en el sitio?
-                        </dt>
-                        <dd id="answer1" style="display: none">
-                            Para registrarte en nuestro sitio, sigue los
-                            siguientes pasos, Rellenar tu nombre, Tu apellido,un
-                            Correo y un telefono
-                        </dd>
-
-                        <dt
-                            class="button-style"
-                            onclick="toggleAnswer('answer2')"
-                        >
-                            ¿Cuáles son los métodos de pago aceptados?
-                        </dt>
-                        <dd id="answer2" style="display: none">
-                            Aceptamos tarjetas de crédito y PayPal como métodos
-                            de pago.
-                        </dd>
-
-                        <dt
-                            class="button-style"
-                            onclick="toggleAnswer('answer3')"
-                        >
-                            ¿Estan comprometidos con el medio ambiente?
-                        </dt>
-                        <dd id="answer3" style="display: none">
-                            Claro, cumplimos con el mas alto estandar de calidad
-                            hacia el medio ambiente.
-                        </dd>
-                        <style>
-                            .button-style {
-                                background-color: #0c1883; /* Color de fondo del botón */
-                                color: white; /* Color del texto */
-                                padding: 10px 20px; /* Espaciado interno del botón */
-                                border: none; /* Sin borde */
-                                cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-                                border-radius: 5px; /* Bordes redondeados */
-                                margin: 5px; /* Margen entre botones */
-                            }
-                        </style>
-                        <!-- Agrega más preguntas y respuestas aquí -->
-                    </dl>
-                    <script>
-                        function toggleAnswer(id) {
-                            var answer = document.getElementById(id);
-                            if (answer.style.display === "none") {
-                                answer.style.display = "block";
-                            } else {
-                                answer.style.display = "none";
-                            }
-                        }
-                    </script>
-                </div>
-            </div>
+            </section>
         </main>
-        <div class="container">
-            <footer
-                class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-            >
-                <div class="col-md-4 d-flex align-items-center">
-                    <a
-                        href="/"
-                        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-                    >
-                        <i class="bi bi-person-workspace"></i>
-                    </a>
-                    <span class="mb-3 mb-md-0 text-body-secondary"
-                        >© FrontEnd Team, CIISA, Seccion 71</span
-                    >
-                    Dirección: Calle 1 oriente esquina 3 sur n°809, Talca.
-                    <br />
-                    Teléfono y Whatsapp: +56950186583
-                </div>
-
-                <ul
-                    class="nav col-md-4 justify-content-end list-unstyled d-flex"
-                >
-                    <li class="ms-3">
-                        <a class="text-body-secondary" href="#"
-                            ><i class="bi bi-instagram"></i
-                        ></a>
-                    </li>
-                    <li class="ms-3">
-                        <a class="text-body-secondary" href="#"
-                            ><i class="bi bi-facebook"></i
-                        ></a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+        <!-- Bootstrap Bundle JS (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>
