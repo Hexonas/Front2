@@ -321,57 +321,31 @@
                     <form class="row g-3 needs-validation" novalidate>
                         <div class="col-md-4">
                             <label for="validationCustom01" class="form-label"
-                                >First name</label
+                                >Nombre</label
                             >
                             <input
                                 type="text"
                                 class="form-control"
                                 id="validationCustom01"
-                                value="Mark"
                                 required
                             />
-                            <div class="valid-feedback">Looks good!</div>
+                            <div class="valid-feedback">Todo bien!</div>
                         </div>
                         <div class="col-md-4">
                             <label for="validationCustom02" class="form-label"
-                                >Last name</label
+                                >Email</label
                             >
                             <input
-                                type="text"
+                                type="email"
                                 class="form-control"
                                 id="validationCustom02"
-                                value="Otto"
                                 required
                             />
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
-                        <div class="col-md-4">
-                            <label
-                                for="validationCustomUsername"
-                                class="form-label"
-                                >Username</label
-                            >
-                            <div class="input-group has-validation">
-                                <span
-                                    class="input-group-text"
-                                    id="inputGroupPrepend"
-                                    >@</span
-                                >
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="validationCustomUsername"
-                                    aria-describedby="inputGroupPrepend"
-                                    required
-                                />
-                                <div class="invalid-feedback">
-                                    Please choose a username.
-                                </div>
-                            </div>
+                            <div class="valid-feedback">Todo bien!</div>
                         </div>
                         <div class="col-md-6">
                             <label for="validationCustom03" class="form-label"
-                                >City</label
+                                >Dirección</label
                             >
                             <input
                                 type="text"
@@ -380,39 +354,56 @@
                                 required
                             />
                             <div class="invalid-feedback">
-                                Please provide a valid city.
+                                Por favor ingrese una dirección válida
                             </div>
                         </div>
                         <div class="col-md-3">
                             <label for="validationCustom04" class="form-label"
-                                >State</label
+                                >Teléfono</label
                             >
-                            <select
-                                class="form-select"
+                            <input
+                                type="tel"
+                                class="form-control"
                                 id="validationCustom04"
                                 required
-                            >
-                                <option selected disabled value="">
-                                    Choose...
-                                </option>
-                                <option>...</option>
-                            </select>
+                            />
                             <div class="invalid-feedback">
-                                Please select a valid state.
+                                Por favor ingrese un teléfono válido
                             </div>
                         </div>
                         <div class="col-md-3">
                             <label for="validationCustom05" class="form-label"
-                                >Zip</label
+                                >Tipo de Consulta</label
                             >
-                            <input
-                                type="text"
-                                class="form-control"
+                            <select
+                                class="form-select"
                                 id="validationCustom05"
                                 required
-                            />
+                            >
+                                <option selected disabled value="">
+                                    Seleccione
+                                </option>
+                                <option>Solo Terreno</option>
+                                <option>Casa con Parcela</option>
+                                <option>Financiamiento</option>
+                            </select>
                             <div class="invalid-feedback">
-                                Please provide a valid zip.
+                                Por favor seleccione una de las opciones
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="validationTextarea" class="form-label"
+                                >Mensaje</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="validationTextarea"
+                                placeholder="Por favor ingrese su mensaje"
+                                required
+                            ></textarea>
+                            <div class="invalid-feedback">
+                                Mensaje no ingresado, por favor ingrese su
+                                mensaje
                             </div>
                         </div>
                         <div class="col-12">
@@ -428,16 +419,16 @@
                                     class="form-check-label"
                                     for="invalidCheck"
                                 >
-                                    Agree to terms and conditions
+                                    Acepto términos y condiciones
                                 </label>
                                 <div class="invalid-feedback">
-                                    You must agree before submitting.
+                                    Tienes que aceptar antes de enviar
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit">
-                                Submit form
+                                Enviar
                             </button>
                         </div>
                     </form>
