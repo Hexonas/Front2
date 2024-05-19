@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     const htmlElement = document.documentElement;
     const switchElement = document.getElementById("darkModeSwitch");
-
-    // Set the default theme to dark if no setting is found in local storage
+    // Cambiar el tema a dark por default si no hay configuración en local storage
     const currentTheme = localStorage.getItem("bsTheme") || "dark";
     htmlElement.setAttribute("data-bs-theme", currentTheme);
     switchElement.checked = currentTheme === "dark";
@@ -21,10 +20,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 (() => {
     "use strict";
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    //Toma todos los formularios
     const forms = document.querySelectorAll(".needs-validation");
 
-    // Loop over them and prevent submission
+    //Recorre todos y previene la propagación
     Array.from(forms).forEach((form) => {
         form.addEventListener(
             "submit",
@@ -41,10 +40,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 })();
 
-// Get the button:
+// Obtener boton
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Cuando el usuario baja de 20px, muestra el boton
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -55,8 +54,15 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Cuando el usuario hace click en el boton, sube al inicio del documento
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
+
+
+$(document).ready(function() {
+    $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+});
