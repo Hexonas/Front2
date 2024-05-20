@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terrasol Parcelas</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap Icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Incluye jQuery -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Terrasol Parcelas</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-end"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link js-scroll-trigger"
+                                    href="#nosotros"
+                                    >Nosotros</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#parcelas"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Parcelas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item js-scroll-trigger"
+                                            href="#solo-terreno"
+                                            >Solo Terreno</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item js-scroll-trigger"
+                                            href="#casa-parcela"
+                                            >Casa en Parcela</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link js-scroll-trigger"
+                                    href="#preguntas"
+                                    >Preguntas Frecuentes</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link js-scroll-trigger"
+                                    href="#contacto"
+                                    >Contacto</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <!-- Bootstrap 5 switch -->
+                                <div class="form-check form-switch">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="darkModeSwitch"
+                                        checked
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="darkModeSwitch"
+                                        >Dark Mode</label
+                                    >
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="my-5">
+            <div class="p-5 text-center bg-body-secondary bg-image">
+                <div class="container py-5 text-blck">
+                    <h1 class="text-white">Terrasol Parcelas</h1>
+                    <p class="col-lg-8 mx-auto lead text-white">
+                        Líderes en la venta de Parcelas en el Sur de Chile
+                    </p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section>
+                <div class="container">
+                    <h1 id="nosotros" class="pt-6">Nosotros</h1>
+                    <hr />
+                    <div class="row align-items-md-stretch row-gap-5">
+                        <div class="col-md-6">
+                            <div
+                                class="h-100 p-5 bg-body-secondary border rounded-3"
+                            >
+                                <h2>Inicios</h2>
+                                <p class="pt-5">
+                                    Terrasol Parcelas emerge como un referente
+                                    en el mercado inmobiliario de la zona centro
+                                    sur de Chile, ofreciendo una oportunidad
+                                    única para aquellos que buscan invertir en
+                                    la naturaleza y la tranquilidad de este
+                                    idílico paisaje. Especializados en la venta
+                                    de parcelas de 5000 metros cuadrados,
+                                    Terrasol Parcelas facilita el acceso a la
+                                    propiedad de tierras con una inversión
+                                    inicial accesible, comenzando desde tan solo
+                                    1 millón de pesos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div
+                                class="h-100 p-5 bg-body-secondary border rounded-3"
+                            >
+                                <h2>Nos diferenciamos</h2>
+                                <p class="pt-5">
+                                    Lo que diferencia a Terrasol Parcelas es su
+                                    enfoque innovador y centrado en el cliente.
+                                    Con el objetivo de brindar una experiencia
+                                    completa y transparente, la empresa ofrece
+                                    un tour virtual de las parcelas, permitiendo
+                                    a los clientes explorar y visualizar cada
+                                    rincón de sus futuras propiedades desde la
+                                    comodidad de sus hogares. Además, para
+                                    aquellos que buscan una solución integral,
+                                    Terrasol Parcelas también ofrece la opción
+                                    de adquirir parcelas que incluyen casas,
+                                    proporcionando una alternativa llave en mano
+                                    para aquellos que desean una vida en armonía
+                                    con la naturaleza sin sacrificar comodidades
+                                    modernas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-5">
+                <div class="container pt-5">
+                    <h1 id="parcelas">Parcelas</h1>
+                    <hr class="featurette-divider" />
+                    <div class="row featurette">
+                        <div class="col-md-7">
+                            <h2
+                                id="solo-terreno"
+                                class="featurette-heading fw-normal lh-1 text-center pt-3"
+                            >
+                                <!-- <h2 class="featurette-heading fw-normal lh-1"> -->
+                                Solo Terreno
+                            </h2>
+                            <p class="lead pt-5 text-center">
+                                Especializados en la venta de parcelas de 5000
+                                metros cuadrados.
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <img
+                                src="img/peter-muscutt-pkg77ZtBCmg-unsplash.jpg"
+                                alt=""
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                    </div>
+                    <hr class="featurette-divider" />
+                    <div class="row featurette">
+                        <div class="col-md-7 order-md-2">
+                            <h2
+                                id="casa-parcela"
+                                class="featurette-heading fw-normal lh-1 text-center pt-3"
+                            >
+                                Casas en Parcelas
+                            </h2>
+                            <p class="lead pt-5 text-center">
+                                Disponemos de parcelas con la construcción hecha
+                                de la casa soñada.
+                            </p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <img
+                                src="img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg"
+                                alt=""
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                    </div>
+                    <hr class="featurette-divider" />
+                </div>
+            </section>
+            <section class="mt-5">
+                <div class="container pt-5">
+                    <h1 id="preguntas" class="mb-5">Preguntas Frecuentes</h1>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    <strong
+                                        >¿Cómo solicito una cotización?</strong
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Puedes contactarnos por mensaje directo en
+                                    instagram o facebook y nos pides la
+                                    cotización.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    <strong
+                                        >¿Cómo veo una parcela o casa?</strong
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Puedes solicitar visita virtual por mensaje
+                                    directo en instagram o facebook
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    <strong
+                                        >¿Cómo veo los temas de financiamiento
+                                        directo?</strong
+                                    >
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Puedes contactarnos por mensaje directo en
+                                    instagram o facebook y nos indicas que
+                                    buscas financiamientos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-5">
+                <div class="container pt-5">
+                    <h1 id="contacto" class="mb-5">Contáctanos</h1>
+                    <div class="row g-5">
+                        <div class="col-md-5 col-lg-4 order-md-last">
+                            <div class="border mb-5">
+                                <h3 class="text-center pt-5">Ubicación</h3>
+                                <p class="text-center pb-5">
+                                    Entre Talca y la Region de Los Lagos
+                                </p>
+                            </div>
+                            <div class="border">
+                                <h3 class="text-center pt-5">Teléfono</h3>
+                                <p class="text-center pb-5">+56 9 5018 6583</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-lg-8">
+                            <form
+                                class="needs-validation was-validated"
+                                novalidate=""
+                            >
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label
+                                            for="firstName"
+                                            class="form-label"
+                                            >Nombre</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="firstName"
+                                            placeholder=""
+                                            value=""
+                                            required=""
+                                        />
+                                        <div class="invalid-feedback">
+                                            Ingrese su nombre por favor
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="lastName" class="form-label"
+                                            >Apellido</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="lastName"
+                                            placeholder=""
+                                            value=""
+                                            required=""
+                                        />
+                                        <div class="invalid-feedback">
+                                            Ingrese su apellido por favor
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label"
+                                            >Email
+                                        </label>
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="you@example.com"
+                                            required=""
+                                            ;
+                                        />
+                                        <div class="invalid-feedback">
+                                            Ingrese su correo de contacto
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="address" class="form-label"
+                                            >Dirección</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="address"
+                                            placeholder="Dirección, Comuna"
+                                            required=""
+                                        />
+                                        <div class="invalid-feedback">
+                                            Ingrese por favor su dirección
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="telefono" class="form-label"
+                                            >Teléfono
+                                        </label>
+                                        <input
+                                            type="tel"
+                                            class="form-control"
+                                            id="telefono"
+                                            placeholder="ej: 999999999"
+                                            required=""
+                                            ;
+                                        />
+                                        <div class="invalid-feedback">
+                                            Ingrese por favor su teléfono
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="state" class="form-label"
+                                            >Consulta</label
+                                        >
+                                        <select
+                                            class="form-select"
+                                            id="state"
+                                            required=""
+                                        >
+                                            <option value="">
+                                                Seleccione...
+                                            </option>
+                                            <option>Parcelas</option>
+                                            <option>Casa con Parcela</option>
+                                            <option>
+                                                Contacto con un ejecutivo
+                                            </option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Por favor seleccione una opción
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label
+                                            for="validationTextarea"
+                                            class="form-label"
+                                            >Mensaje</label
+                                        >
+                                        <textarea
+                                            class="form-control"
+                                            id="validationTextarea"
+                                            placeholder="Por favor ingrese su mensaje"
+                                            required
+                                        ></textarea>
+                                        <div class="invalid-feedback">
+                                            Mensaje no ingresado, por favor
+                                            ingrese su mensaje
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4" />
+
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="invalidCheck"
+                                        required
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="invalidCheck"
+                                    >
+                                        Acepto los términos y condiciones
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Tienes que aceptar antes de enviar
+                                    </div>
+                                </div>
+
+                                <hr class="my-4" />
+
+                                <button
+                                    class="w-100 btn btn-primary btn-lg"
+                                    type="submit"
+                                >
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <button onclick="topFunction()" id="myBtn" title="Volver al inicio">
+                <i class="bi bi-arrow-up"></i>
+            </button>
+        </main>
+        <div class="container">
+            <footer
+                class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+            >
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary"
+                        >2024, Ciisarros</span
+                    >
+                </div>
+
+                <ul
+                    class="nav col-md-4 justify-content-end list-unstyled d-flex"
+                >
+                    <li class="ms-3">
+                        <a
+                            href="https://www.facebook.com/tuparcelaenelsurdechile"
+                            target="_blank"
+                            ><i class="bi bi-facebook"></i
+                        ></a>
+                    </li>
+                    <li class="ms-3">
+                        <a
+                            href="https://www.instagram.com/terrasol_parcelas?igsh=eG51a2w4NGx5ODJu"
+                            ><i class="bi bi-instagram"></i
+                        ></a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="https://wa.me/56950186583"
+                            ><i class="bi bi-whatsapp"></i
+                        ></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <!-- Bootstrap Bundle JS (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
